@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+</head>
+<body>
+    <main>
+        <section class="menu" id="menu">
+        </section>
+        <div id="main-container">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SRL</th>
+                            <th>NRL</th>
+                            <th>UT</th>
+                            <th>DT</th>
+                            <th>SRC</th>
+                            <th>NRC</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-rows">
+                    </tbody>
+                </table>
+            </div>
+            <div id="main-btns">
+                <button id="save-btn" class="btn">Save</button>
+                <button id="line-btn" class="btn">Display</button>
+            </div>
+        </div>
+        
+    </main>
+    <canvas id="myChart" width="400" height="200"></canvas>
+
+    <script src="main.js">
+     </script>
+</body>
+</html>
