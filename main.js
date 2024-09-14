@@ -110,7 +110,7 @@ async function getAPI(){
 
 
 async function displayCharts(){
-    const menu = document.getElementById('menu');
+    const menu = document.getElementById('menu-content');
     const data = await getAPI();
     for(let chart of data.charts){
         let displaiedChart = document.createElement('div'); 
