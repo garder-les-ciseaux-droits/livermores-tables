@@ -1,7 +1,7 @@
 /* Стили для body и html */
 body {
-    /* background-color: rgb(32, 32, 32); */
-    background-image: url('/assets/aaron-burden-NnakA7CGFEg-unsplash.jpg');
+    background-color: rgb(32, 32, 32);
+/*     background-image: url('/assets/aaron-burden-NnakA7CGFEg-unsplash.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
