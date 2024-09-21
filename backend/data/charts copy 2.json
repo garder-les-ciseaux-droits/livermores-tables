@@ -15,8 +15,7 @@
                 2,
                 1
               ],
-              "point": 4,
-              "color": "red"
+              "point": 0
             },
             {
               "table": [
@@ -27,8 +26,7 @@
                 0,
                 12
               ],
-              "point": 5,
-              "color": "black"
+              "point": 7
             },
             {
               "table": [
@@ -39,32 +37,29 @@
                 0,
                 0
               ],
-              "point": 0,
-              "color": "black"
+              "point": 7
             },
             {
               "table": [
                 50,
                 0,
-                0,
-                0,
-                0,
-                12
-              ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                50,
-                12,
                 0,
                 0,
                 0,
                 0
               ],
-              "point": 2,
-              "color": "red"
+              "point": 7
+            },
+            {
+              "table": [
+                50,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "point": 7
             },
             {
               "table": [
@@ -75,8 +70,7 @@
                 0,
                 0
               ],
-              "point": 3,
-              "color": "black"
+              "point": 7
             },
             {
               "table": [
@@ -87,8 +81,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -99,8 +92,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -111,8 +103,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -123,8 +114,7 @@
                 0,
                 50
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -135,8 +125,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -147,8 +136,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -159,8 +147,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -171,8 +158,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -183,8 +169,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -195,8 +180,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -207,8 +191,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -219,8 +202,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -231,8 +213,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -243,8 +224,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -255,8 +235,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -267,8 +246,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -279,8 +257,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -291,8 +268,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -303,8 +279,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -315,8 +290,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -327,8 +301,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -339,8 +312,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -351,8 +323,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -363,8 +334,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -375,8 +345,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -387,8 +356,18 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
+            },
+            {
+              "table": [
+                50,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "point": 7
             },
             {
               "table": [
@@ -399,20 +378,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             }
           ]
         },
@@ -428,8 +394,7 @@
                 2,
                 1
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -440,8 +405,7 @@
                 0,
                 12
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -452,8 +416,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -464,8 +427,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -476,20 +438,18 @@
                 0,
                 0
               ],
-              "point": 0,
-              "color": "red"
+              "point": 7
             },
             {
               "table": [
                 0,
                 0,
                 0,
-                52,
+                502,
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -500,8 +460,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -512,8 +471,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -524,8 +482,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -536,8 +493,7 @@
                 0,
                 50
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -548,8 +504,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -560,8 +515,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -572,8 +526,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -584,8 +537,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -596,8 +548,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -608,8 +559,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -620,8 +570,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -632,8 +581,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -644,8 +592,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -656,176 +603,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                50,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                50,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                50,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                50,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                50,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                50,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                50,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                50,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                50,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             }
           ]
         }
@@ -846,8 +624,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -858,8 +635,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -870,8 +646,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -882,20 +657,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                50,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -906,8 +668,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -918,20 +679,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -942,8 +690,18 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
+            },
+            {
+              "table": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "point": 7
             },
             {
               "table": [
@@ -954,8 +712,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -966,8 +723,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -978,8 +734,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -990,8 +745,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -1002,8 +756,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -1014,8 +767,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -1026,8 +778,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -1038,8 +789,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -1050,8 +800,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -1062,8 +811,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -1074,8 +822,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -1086,140 +833,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                50,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                50,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                50,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                50,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                50,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                50,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                50,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                50,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                50,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                50,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             }
           ]
         },
@@ -1235,8 +849,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -1247,8 +860,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -1259,8 +871,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -1271,20 +882,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                50,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -1295,8 +893,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -1307,20 +904,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
-            },
-            {
-              "table": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -1331,8 +915,18 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
+            },
+            {
+              "table": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "point": 7
             },
             {
               "table": [
@@ -1343,8 +937,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -1355,8 +948,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -1367,8 +959,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -1379,8 +970,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -1391,8 +981,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -1403,8 +992,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -1415,8 +1003,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -1427,8 +1014,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -1439,8 +1025,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -1451,8 +1036,7 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
             },
             {
               "table": [
@@ -1463,8 +1047,18 @@
                 0,
                 0
               ],
-              "point": 7,
-              "color": "none"
+              "point": 7
+            },
+            {
+              "table": [
+                50,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "point": 7
             }
           ]
         }

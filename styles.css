@@ -1,6 +1,9 @@
 /* Стили для body и html */
 body {
-    background-color: rgb(32, 32, 32);
+    /* background-color: rgb(32, 32, 32); */
+    background-image: url('/assets/aaron-burden-NnakA7CGFEg-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
@@ -22,6 +25,7 @@ main {
 .menu {
     display: flex;
     flex-direction: column;
+    min-width: 15rem;
     width: 15rem;
     background-color: rgb(17, 17, 17);
     overflow-y: auto;
@@ -81,18 +85,48 @@ main {
     flex: 1;
     display: flex;
     flex-direction: column;
+    position: relative;
+   
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    /* background-color: rgba(33, 33, 33, 0.747) */
+   
+    
+
 }
+
+.overflow{
+    overflow-x: auto;
+}
+
 
 .table-container {
     flex: 1;
     overflow-y: auto;
     padding: 0.5rem;
+    justify-content: center;
+    display: flex;
+  
+
+}
+
+.flex{
+    display: flex;
+}
+#graph-cont{
+    padding: 0.5rem;
+    justify-content: center;
+  
+
 }
 
 #main-btns {
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
+    backdrop-filter: blur(5px);
+    
 }
 
 /* Стили для таблицы */
@@ -111,12 +145,15 @@ th, td {
 
 input {
     width: 4rem;
-    height: 3rem;
+    height: 100%;
     background-color: transparent;
     border: 0;
     color: white;
     text-align: center;    
     font-size: medium;
+    position: relative;
+
+    
 }
 
 /* Убираем стрелки у input type="number" */
@@ -188,10 +225,6 @@ input::-webkit-inner-spin-button {
     color: black;
 }
 
-#myChart {
-    margin-top: 4rem;
-}
-
 
 .settings{
     width: 2rem;
@@ -226,3 +259,189 @@ input::-webkit-inner-spin-button {
     align-items: center;
 
 }
+
+
+.confirmation{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.confirmation-menu{
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 25rem;
+    height: 15rem;
+    background-color: rgb(22, 22, 22);
+    border-color: rgb(19, 19, 19);
+    border: 0.2rem solid;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+.setname-input{
+    width: 20rem;
+    height: 3rem;
+    background-color: rgb(48, 48, 48);
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.conf-text{
+    color: white;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.conf-buttons{
+    background-color: rgb(91, 91, 91);
+    width: 9rem;
+    height: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: white;
+    border: 0rem solid;
+    
+
+}
+
+.conf-buttons:active{
+    background-color: rgb(0, 0, 0);
+}
+
+.divBtns{
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.red-point{
+   
+    border: 0.2rem solid;
+    border-color: red;
+}
+
+.black-point{
+    border: 0.3rem solid;
+    
+    border-color: rgb(0, 0, 0);
+}
+
+.choices{
+    position: absolute;
+    margin-top: 10rem;
+    right: 0;
+    border-radius: 1rem;
+    width: 15rem;
+    height: 18rem;
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+
+}
+
+#cancel-btn{
+    width: 13rem;
+    height: 2rem;
+    border-radius: 0.7rem;
+    margin-bottom: 1rem;
+    background-color: black;
+    color: aliceblue;
+    border: 0rem;
+    cursor: pointer;
+}
+
+#cancel-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+#red-btn{
+    width: 13rem;
+    height: 2rem;
+    border-radius: 0.7rem;
+    margin-bottom: 1rem;
+    background-color: black;
+    color: aliceblue;
+    border: 0rem;
+    cursor: pointer;
+}
+
+#red-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+#black-btn{
+    width: 13rem;
+    height: 2rem;
+    border-radius: 0.7rem;
+    margin-bottom: 1rem;
+    background-color: black;
+    color: aliceblue;
+    border: 0rem;
+    cursor: pointer;
+}
+
+
+#black-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+
+#remove-btn{
+    width: 13rem;
+    height: 2rem;
+    border-radius: 0.7rem;
+    margin-bottom: 1rem;
+    background-color: black;
+    color: aliceblue;
+    border: 0rem;
+    cursor: pointer;
+}
+
+#remove-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+#text-choice{
+    color: white;
+    margin-bottom: 1.5rem;
+    font-weight: bolder;
+}
+
+
+.hidden{
+    display: none;
+    /* color: rgb(97, 255, 137); */
+}
+
+
+
+.tables-header{
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+}
+

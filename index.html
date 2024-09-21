@@ -9,13 +9,14 @@
 
 </head>
 <body>
-    <main>
+    <main id="main">
         <section class="menu" id="menu">
+            <p class="tables-header">Tables</p>
             <div class="menu-content" id="menu-content">
-            
+               
             </div>
             <div class="menu-buttons">
-                <button class="btn-create">Create new table</button>
+                <button id="create-button" class="btn-create">Create new table</button>
                 <div class="tools">
                     <!-- <div class="profile">
                         <img class="avatar" src="/assets/lr-av.jpg">
@@ -30,10 +31,11 @@
             </div>
         </section>
         <div id="main-container">
-            <div class="table-container">
+            <div class="table-container" id="table-cont">
                 <table>
                     <thead>
                         <tr>
+                            <th>Date</th>
                             <th>SRL</th>
                             <th>NRL</th>
                             <th>UT</th>
@@ -47,14 +49,19 @@
                     </tbody>
                 </table>
             </div>
+            <div id="graph-cont" class="hidden table-container">
+                <canvas id="myChart" ></canvas>
+            </div>
             <div id="main-btns">
                 <button id="save-btn" class="btn">Save</button>
                 <button id="line-btn" class="btn">Display</button>
+                <button id="line-merge" class="btn hidden">Merge</button>
+                <button id="line-hid" class="btn hidden">Hide</button>
                 <!-- Добавьте дополнительные кнопки, если необходимо -->
             </div>
         </div>
     </main>
-    <!-- <canvas id="myChart" width="400" height="200"></canvas> -->
+  
 
     <script src="main.js">
      </script>
