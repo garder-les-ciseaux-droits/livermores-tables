@@ -4,7 +4,8 @@
 
 // Get and save data with Local Storage
 
-
+const updatedGraphData = [];
+const updatedLablesData = [];
 let dataModelStorage = [];
 
 async function getLocalStorage() {
@@ -15,7 +16,7 @@ async function getLocalStorage() {
             return JSON.parse(storedData);
         }
 
-        const defaultData = Array.from({ length: 34 }, () => Array(6).fill(''));
+        const defaultData = Array.from({ length: 34 }, () => Array(7).fill(0));
         localStorage.setItem('chartsData', JSON.stringify(defaultData));
 
         return defaultData;
@@ -36,17 +37,42 @@ async function saveDataToLocalStorage() {
 function bindInputEventsStorage() {
     const tableBody = document.getElementById('table-rows');
     const tableRows = tableBody.querySelectorAll('tr');
-
+  
     for (let i = 0; i < tableRows.length; i++) {
+       
         const inputs = tableRows[i].querySelectorAll('input');
-        
+      
         inputs.forEach((input, index) => {
             input.addEventListener('change', function () {
                 dataModelStorage[i][index] = input.value;
                 saveDataToLocalStorage(); 
+
+                for(let data of dataModelStorage){
+                    for(let i = 1; i < data.length; i++){
+                        if(data[i] !== ''){
+                            updatedGraphData.push(Number(data[i]))
+                            if(data[0] !== ''){
+                                updatedLablesData.push(data[0])
+                            }
+                            else{
+                                updatedLablesData.push('No date')
+                            }
+                        
+                        }
+                    }
+                    
+                }
+            
+                myChart.data.datasets[0].data = updatedGraphData;
+                myChart.data.labels = updatedLablesData;
+                myChart.update();
             });
         });
     }
+
+
+
+
 }
 
 async function getTableRowsStorage() {
@@ -64,59 +90,37 @@ async function getTableRowsStorage() {
 }
 
 async function mainStorage() {
+
     await getTableRowsStorage(); 
     bindInputEventsStorage(); 
+
+    for(let data of dataModelStorage){
+        for(let i = 1; i < data.length; i++){
+            if(data[i] !== ''){
+                updatedGraphData.push(Number(data[i]))
+                if(data[0] !== ''){
+                    updatedLablesData.push(data[0])
+                }
+                else{
+                    updatedLablesData.push('No date')
+                }
+            
+            }
+        }
+        
+    }
+    myChart.data.datasets[0].data = updatedGraphData;
+    myChart.data.labels = updatedLablesData;
+    myChart.update();
+
     console.log('Final data model after binding inputs:', dataModelStorage); 
 }
 
 
+
+
 mainStorage();
 
-
-function createChart(){
-    const main = document.getElementById('main');
-    const confirmation = document.createElement('div');
-
-    const confirmationMenu = document.createElement('div');
-    confirmation.id = 'confirmation';
-    confirmationMenu.classList.add('confirmation-menu');
-
-    const divBtns = document.createElement('div');
-    divBtns.classList.add('divBtns')
-    divBtns.appendChild(document.createElement('button'));
-    divBtns.appendChild(document.createElement('button'));
-    const buttons = divBtns.querySelectorAll('button');
-    for(let i = 0; i < buttons.length; i++){
-        buttons[i].classList.add('conf-buttons');
-        if(i === 0){
-            buttons[i].innerText = 'Create';
-            buttons[i].addEventListener('click', function(){
-                saveNewChart()
-            })
-        }
-        else{
-            buttons[i].innerText = 'Cancel';
-            buttons[i].addEventListener('click', function(){
-                cancelCreatingChart()
-            })
-        }
-    }
-
-    const text = document.createElement('p');
-    text.innerText = 'Create new table';
-    text.classList.add('conf-text')
-    confirmationMenu.appendChild(text)
-    const input = document.createElement('input');
-    input.placeholder = 'Set name'
-    input.classList.add('setname-input')
-    confirmationMenu.appendChild(input);
-
-    confirmationMenu.appendChild(divBtns);
-
-    confirmation.classList.add('confirmation');
-    confirmation.appendChild(confirmationMenu)
-    main.appendChild(confirmation);
-}
 
 
 
@@ -129,11 +133,11 @@ function createRows(){
     for(let i = 0; i < 34; i++){
         let row = document.createElement("tr");
         
-        for(let index = 0; index < 7; index++){
+        for(let index = 0; index < 7; index++){ 
             let data = document.createElement("td");
             let input = document.createElement("input")
             if(index === 0){
-                input.type = 'date'
+                input.type = 'date';
                 input.style.width = '100%'
             }
             else{
@@ -151,25 +155,19 @@ function createRows(){
         }
         tableBody.appendChild(row);
     }
-}
-
-
-
-
-
-
+};
 
 
 createRows();
 
 async function getAPI(){
-    const response = await fetch('http://localhost:3000/api/get-charts')
+    const response = await fetch('http://localhost:3000/api/get-charts');
     if(!response.ok){
         throw new Error('Failed to get')
     }
     const data = await response.json();
     return data;
-}
+};
 
 async function displayCharts(){
     const menu = document.getElementById('menu-content');
@@ -195,7 +193,13 @@ async function displayCharts(){
         nameBase.appendChild(nameContainer);
         menu.appendChild(nameBase);
     }   
-}
+};
+
+
+let currentChartIndex = null;
+let currentChartNumberIndex = null;
+
+
 
 async function extendChartDiv(){
     await displayCharts();
@@ -228,10 +232,9 @@ async function extendChartDiv(){
         })
     })
 
-    const res = await getAPI()
-    const allContainers = document.querySelectorAll('.one-chart')
-    let currentChartIndex = null;
-    let currentChartNumberIndex = null;
+    const res = await getAPI();
+    const allContainers = document.querySelectorAll('.one-chart');
+    
 
     for(let i = 0; i < allContainers.length; i++){
         const numCont = allContainers[i].querySelectorAll('.number');
@@ -252,10 +255,10 @@ async function extendChartDiv(){
                         color: item.color
                       }));
                     const tables = values.map(item => item.table);
-                    showDataTable(tables, pivotPoints)
+                    showDataTable(tables, pivotPoints);
                     bindInputEventsTable();
-                    pointChoice()
-                    console.log(pointsModel)
+                    pointChoice();
+                    // console.log(pointsModel)
                 
                     // Обновление данных для графика
                     let pointColors = [];
@@ -274,17 +277,35 @@ async function extendChartDiv(){
                     }
                     // console.log(pointColors);
 
+                    const addTableButton = document.getElementById('add-table-btn');
+                    addTableButton.addEventListener('click', async function(e){
+                        e.stopPropagation();
+                        if (currentChartIndex !== null && currentChartNumberIndex !== null) {
+                            res.charts[currentChartIndex].curCharts[currentChartNumberIndex].values = dataModel.map((item, index) => {
+                                return {
+                                    table: item,
+                                    point: pointsModel[index].point,
+                                    color: pointsModel[index].color
+                                };
+                            });
+                         await saveDataToServers(res);
+                         await addNewTable(res, i);      
+                        } 
+                    })
+
+
                     let lineData = [];
                     let labelsData = [];
                     for(let data of dataModel){
                         for(let i = 1; i < data.length; i++){
                             if(data[i] !== 0){
                                 lineData.push(data[i])
+                                for(let j = 0; j < 1; j++){
+                                    labelsData.push(data[j])
+                                }
                             }
                         }
-                        for(let j = 0; j < 1; j++){
-                            labelsData.push(data[j])
-                        }
+                       
 
                     }
                     let mergedLineData = [];
@@ -298,17 +319,10 @@ async function extendChartDiv(){
                                         mergedLineData.push(p);
                                         mergedLabelsData.push(t.table[0]);
                                     }
-                                }
-                               
-                                
-                            }
-                               
-                            
+                                }                              
+                            }     
                         }
                     }
-                    console.log(mergedLabelsData.length);
-                    console.log(mergedLineData.length);
-                   
 
                     const mergeButton = document.getElementById('line-merge');
                     mergeButton.addEventListener('click', function(){
@@ -319,14 +333,6 @@ async function extendChartDiv(){
                         myChart.update();
                     });
 
-
-                    // for(let dt of res.charts[i].curCharts){
-                    //     for(let t of dt.values){
-                    //         console.log(t)
-                    //     }
-                    // }
-
-                    // console.log(labelsData);
                     myChart.data.datasets[0].label = res.charts[i].stocks;
                     myChart.data.datasets[0].data = lineData;
                     myChart.data.datasets[0].pointBackgroundColor = pointColors;
@@ -336,9 +342,12 @@ async function extendChartDiv(){
             })
         }  
     }
-
-    const button = document.getElementById('save-btn');
-    button.onclick = function(){
+    
+    const buttonSave = document.getElementById('save-btn');
+    buttonSave.addEventListener('click', async function(event){
+        
+        event.preventDefault();
+        
         if (currentChartIndex !== null && currentChartNumberIndex !== null) {
             res.charts[currentChartIndex].curCharts[currentChartNumberIndex].values = dataModel.map((item, index) => {
                 return {
@@ -347,11 +356,13 @@ async function extendChartDiv(){
                     color: pointsModel[index].color
                 };
             });
-            saveDataToServers(res);
+         await saveDataToServers(res);
+         
+            
         } else {
             console.log('No chart selected');
         }
-    };
+    });
 }
 
 function bindInputEventsTable() {
@@ -482,7 +493,7 @@ function showDataTable(data, points){
         const point = findPoint(points, i + 1)
         pointsModel[i] = point;
         dataModel[i] = row;
-        console.log(inputs.length)
+        // console.log(inputs.length)
         for(let j = 0; j < inputs.length; j++){   
             inputs[j].value = row[j];
             inputs[j].classList.remove('red-point', 'black-point', 'none');
@@ -502,7 +513,7 @@ function showDataTable(data, points){
 }
 
 async function saveDataToServers(data) {
-    try {
+
         const responsePost = await fetch('http://localhost:3000/api/save-charts', {
             method: 'POST',
             headers: {
@@ -516,10 +527,9 @@ async function saveDataToServers(data) {
         }
 
         const responseData = await responsePost.json();
-        console.log('Данные успешно сохранены:', responseData);
-    }catch (error) {
-        console.error('Ошибка при сохранении данных на сервер:', error);
-    }    
+
+
+
 }
 
 function findPoint(data, i){
@@ -615,8 +625,30 @@ async function saveNewChart(){
     }   
 }
 
-const button = document.getElementById('create-button');
-button.addEventListener('click', function(){
+
+async function addNewTable(data, i){
+            const inx = data.charts[i].curCharts.length;
+            data.charts[i].curCharts.push({number: inx, values:[]})
+
+            const responsePost = await fetch('http://localhost:3000/api/save-charts', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json', 
+                },
+                body: JSON.stringify(data)
+            });
+
+            if (!responsePost.ok) {
+                throw new Error('Failed to POST data');
+            }
+
+            const responseData = await responsePost.json();
+            console.log('Данные успешно сохранены:', responseData);
+}
+
+const buttonForCreating = document.getElementById('create-button');
+buttonForCreating.addEventListener('click', function(e){
+    e.preventDefault();
     createChart();
 })
 
@@ -709,5 +741,10 @@ function toDisplay(){
   
   })
 }  
+
+
+
+
+
 
 
